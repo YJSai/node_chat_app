@@ -20,6 +20,8 @@ io.on('connection', (socket) => {
     createdAt: new Date().getTime()
   });
 
+ 
+  
   socket.broadcast.emit('newMessage', {
     from: 'Admin',
     text: 'New user joined',
